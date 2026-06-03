@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Eterna Casualidad</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px 20px;
+    font-family:'Cormorant Garamond',serif;
+    color:#fff;
+    overflow-x:hidden;
+
+    background:
+    radial-gradient(circle at 20% 20%, rgba(255,214,236,.25), transparent 25%),
+    radial-gradient(circle at 80% 10%, rgba(255,255,255,.15), transparent 20%),
+    radial-gradient(circle at 50% 80%, rgba(255,192,203,.18), transparent 30%),
+    linear-gradient(180deg,#12091f 0%,#24103a 40%,#3a164d 70%,#1a0d27 100%);
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+    radial-gradient(2px 2px at 20px 30px,#fff,transparent),
+    radial-gradient(2px 2px at 40px 70px,#ffffff,transparent),
+    radial-gradient(1px 1px at 90px 40px,#ffffff,transparent),
+    radial-gradient(2px 2px at 130px 80px,#fff,transparent),
+    radial-gradient(1px 1px at 160px 20px,#fff,transparent);
+    background-size:200px 120px;
+    opacity:.35;
+    animation:stars 20s linear infinite;
+    pointer-events:none;
+}
+
+@keyframes stars{
+    from{transform:translateY(0);}
+    to{transform:translateY(-120px);}
+}
+
+.container{
+    width:100%;
+    max-width:950px;
+}
+
+.poem{
+    position:relative;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:35px;
+    padding:70px 70px;
+    box-shadow:
+    0 0 40px rgba(255,182,193,.15),
+    0 0 80px rgba(255,182,193,.08);
+}
+
+.poem::before{
+    content:"❦";
+    position:absolute;
+    top:25px;
+    left:50%;
+    transform:translateX(-50%);
+    font-size:2rem;
+    color:#ffd7ea;
+}
+
+.poem::after{
+    content:"❦";
+    position:absolute;
+    bottom:25px;
+    left:50%;
+    transform:translateX(-50%);
+    font-size:2rem;
+    color:#ffd7ea;
+}
+
+h1{
+    font-family:'Great Vibes',cursive;
+    text-align:center;
+    font-size:5rem;
+    color:#ffd8eb;
+    margin-bottom:20px;
+    font-weight:normal;
+    text-shadow:0 0 20px rgba(255,210,230,.5);
+}
+
+.subtitle{
+    text-align:center;
+    letter-spacing:4px;
+    color:#f8d7e7;
+    margin-bottom:50px;
+    font-size:1rem;
+}
+
+.content{
+    font-size:1.75rem;
+    line-height:2.2;
+    text-align:center;
+    color:#fffafc;
+}
+
+.stanza{
+    margin-bottom:35px;
+}
+
+.highlight{
+    color:#ffd8eb;
+    font-weight:600;
+}
+
+.separator{
+    width:120px;
+    height:1px;
+    background:linear-gradient(to right,transparent,#ffd8eb,transparent);
+    margin:35px auto;
+}
+
+.signature{
+    margin-top:50px;
+    text-align:center;
+    font-family:'Great Vibes',cursive;
+    font-size:2.8rem;
+    color:#ffd8eb;
+}
+
+.moon{
+    position:absolute;
+    top:40px;
+    right:40px;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:rgba(255,245,225,.9);
+    box-shadow:
+    0 0 25px rgba(255,255,255,.8),
+    0 0 60px rgba(255,255,255,.3);
+}
+
+@media(max-width:768px){
+
+h1{
+    font-size:3.5rem;
+}
+
+.poem{
+    padding:45px 25px;
+}
+
+.content{
+    font-size:1.4rem;
+    line-height:2;
+}
+
+.moon{
+    width:50px;
+    height:50px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="poem">
+
+<div class="moon"></div>
+
+<h1>Mi Eterna Casualidad</h1>
+
+<div class="subtitle">
+NOCHE DEL MARTES · 2 DE JUNIO DE 2026
+</div>
+
+<div class="content">
+
+<div class="stanza">
+Esta noche de martes, 2 de junio de 2026,<br>
+cuando el cielo guarda sus secretos entre estrellas<br>
+y la luna parece vigilar silenciosamente los sueños del mundo,<br>
+mi corazón vuelve a encontrarte en cada pensamiento,<br>
+porque incluso cuando no estás a mi lado,<br>
+sigues siendo el lugar donde descansa mi alma.
+</div>
+
+<div class="separator"></div>
+
+<div class="stanza">
+A veces me pregunto cómo era mi vida<br>
+antes de que llegaras a ella,<br>
+antes de que tus ojos iluminaran mis días,<br>
+antes de que tu voz se convirtiera en la melodía<br>
+que mi corazón reconoce entre millones.
+</div>
+
+<div class="stanza">
+Y siempre llego a la misma conclusión:<br>
+vivía, sí...<br>
+pero no conocía lo que era sentir el amor<br>
+con la intensidad con la que lo siento ahora.
+</div>
+
+<div class="stanza">
+Porque tú no llegaste a cambiar una parte de mi vida.<br>
+Llegaste a transformarla por completo.
+</div>
+
+<div class="separator"></div>
+
+<div class="stanza">
+Desde que te conocí,<br>
+los amaneceres tienen más color,<br>
+las noches tienen más significado<br>
+y los sueños dejaron de ser simples imaginaciones<br>
+para convertirse en deseos que llevan tu nombre.
+</div>
+
+<div class="stanza">
+Esta noche quiero confesarte algo que quizá ya sabes,<br>
+pero que jamás me cansaré de repetir:
+</div>
+
+<div class="stanza highlight">
+Te amo.
+</div>
+
+<div class="stanza">
+Te amo cuando sonríes<br>
+y el mundo parece detenerse para contemplarte.
+</div>
+
+<div class="stanza">
+Te amo cuando hablas<br>
+y cada palabra tuya se convierte en algo valioso.
+</div>
+
+<div class="stanza">
+Te amo cuando estás feliz,<br>
+cuando estás cansada,<br>
+cuando necesitas un abrazo,<br>
+cuando buscas refugio,<br>
+cuando simplemente eres tú.
+</div>
+
+<div class="stanza">
+Y te amo aún más<br>
+porque cada día descubro nuevas razones<br>
+para enamorarme de la mujer maravillosa que eres.
+</div>
+
+<div class="separator"></div>
+
+<div class="stanza">
+Mi niña hermosa,<br>
+si pudieras mirar dentro de mi corazón,<br>
+verías que todo está lleno de ti.
+</div>
+
+<div class="stanza highlight">
+Cada rincón.<br>
+Cada latido.<br>
+Cada ilusión.
+</div>
+
+<div class="stanza">
+Todo lleva tu esencia.
+</div>
+
+<div class="stanza">
+Porque te has convertido en mi pensamiento favorito,<br>
+en mi tranquilidad después de los días difíciles,<br>
+en mi alegría inesperada,<br>
+en la razón por la que sonrío sin darme cuenta.
+</div>
+
+<div class="separator"></div>
+
+<div class="stanza">
+Y cuando llega la noche,<br>
+como esta noche de junio,<br>
+es imposible no imaginar cómo sería<br>
+tenerte entre mis brazos,<br>
+sentir tu cabeza descansando sobre mi pecho,<br>
+escuchar tu respiración tranquila<br>
+y quedarme contemplando la suerte inmensa<br>
+de tenerte en mi vida.
+</div>
+
+<div class="stanza">
+Porque no existe lujo más grande que tu amor.
+</div>
+
+<div class="stanza">
+No existe tesoro más valioso que tu confianza.
+</div>
+
+<div class="stanza">
+No existe milagro más hermoso<br>
+que haber coincidido contigo en este inmenso universo.
+</div>
+
+<div class="separator"></div>
+
+<div class="stanza">
+Si algún día las estrellas dejaran de brillar,<br>
+seguiría encontrando luz en tus ojos.
+</div>
+
+<div class="stanza">
+Si algún día el mundo guardara silencio,<br>
+seguiría escuchando la música de tu voz.
+</div>
+
+<div class="stanza">
+Y si algún día tuviera que elegir<br>
+entre todas las maravillas de este planeta,<br>
+te elegiría a ti,<br>
+una y otra vez,<br>
+sin dudarlo ni por un segundo.
+</div>
+
+<div class="stanza highlight">
+Porque eres mi presente favorito.<br><br>
+
+Mi sueño más bonito.<br><br>
+
+Mi paz.<br><br>
+
+Mi alegría.<br><br>
+
+Mi amor imposible de medir.
+</div>
+
+<div class="separator"></div>
+
+<div class="stanza">
+Esta noche, mientras la luna observa desde lo alto<br>
+y el tiempo avanza lentamente,<br>
+quiero que mis palabras lleguen hasta tu corazón<br>
+como una caricia suave y sincera.
+</div>
+
+<div class="stanza">
+Quiero que recuerdes que existe alguien<br>
+que piensa en ti incluso en los momentos más simples,<br>
+que sonríe al recordar tu nombre,<br>
+que guarda tus recuerdos como tesoros<br>
+y que se siente inmensamente afortunado<br>
+de poder amarte.
+</div>
+
+<div class="stanza">
+Y si las estrellas pudieran escucharme ahora,<br>
+les pediría un solo deseo:
+</div>
+
+<div class="stanza">
+Poder seguir construyendo contigo<br>
+más noches, más recuerdos,<br>
+más abrazos,<br>
+más sueños<br>
+y más historias que merezcan ser contadas.
+</div>
+
+<div class="separator"></div>
+
+<div class="stanza">
+Porque mi amor por ti<br>
+no conoce distancias,<br>
+no entiende límites<br>
+y no necesita explicaciones.
+</div>
+
+<div class="stanza highlight">
+Simplemente existe.
+</div>
+
+<div class="stanza">
+Tan inmenso como el cielo.<br><br>
+
+Tan profundo como el océano.<br><br>
+
+Tan eterno como mi deseo<br>
+de seguir amándote cada día más.
+</div>
+
+<div class="stanza">
+Y esta noche de martes,<br>
+bajo la luna de junio,<br>
+con el corazón completamente rendido ante ti,<br>
+solo puedo decirte una verdad:
+</div>
+
+<div class="stanza">
+Eres el amor más hermoso que ha llegado a mi vida,<br>
+la casualidad más perfecta que el destino escribió para mí,<br>
+y la mujer a quien amaré<br>
+con toda mi alma,<br>
+con todos mis sueños<br>
+y con cada latido de mi corazón.
+</div>
+
+<div class="signature">
+Para la dueña de mi corazón ♥
+</div>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>
